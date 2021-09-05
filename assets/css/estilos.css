@@ -18,6 +18,7 @@ body,html{
 	font-family: 'ZCOOL KuaiLe' ,Arial, Helvetica, sans-serif;
 	color: #088A08;
 	text-shadow: 8px 8px #151515;
+	margin-top: 15px;
 }
 .logo h1{
 	display: inline-block;
@@ -46,7 +47,8 @@ body,html{
 	position: relative;
 }
 .display--area{
-	margin-top: 30px;
+	margin-top: 35px;
+	margin-bottom: 35px;
 }
 
 /*Buttons Y/R/G/B */
@@ -169,6 +171,7 @@ footer{
 	font-weight: bold;
 	font-family: Arial, Helvetica, sans-serif;
 	margin-top: 40px;
+	padding-bottom: 15px;
 }
 footer a{
 	color: #FFF;
@@ -219,6 +222,7 @@ footer a:hover{
 .gameOver{
 	font-family: 'Bungee Shade' ,Arial, Helvetica, sans-serif;
 	font-size: 40px;
+	font-weight: bold;
 	background-color: transparent;
 	height: 100px;
 	width: 300px;
@@ -226,8 +230,16 @@ footer a:hover{
 	display: none;
 	text-align: center;	
 	position: absolute;
-	top: calc(50% - 100px);
+	top: calc(50% - 110px);
 	left: calc(50% - 150px);
+}
+.play--again{
+	font-size: 20px;
+	cursor: pointer;
+}
+.play--again:hover{
+	font-size: 23px;
+	transition: font-size .1s;
 }
 .obj,
 .body{

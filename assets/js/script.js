@@ -1,6 +1,6 @@
 //initial data
 let pixel = 10;
-let speed = 50;
+let speed = 60;
 let X = 0;
 let Y = 0;
 let obj = document.querySelector('.obj');
@@ -11,6 +11,7 @@ let keyPress, keyBlock;
 
 //events
 document.addEventListener('keydown', move);
+document.querySelector('.play--again').addEventListener('click', playAgain)
 document.querySelectorAll('.button').forEach((btn)=>{
 	btn.addEventListener('click', buttonPress);
 })
@@ -164,7 +165,7 @@ function itemRamdom(item){
 	item.y = y;
 	document.querySelector('.item').style.top = `${item.y}px`;
 	document.querySelector('.item').style.left = `${item.x}px`;
-	//speedUp(2); desativado por enquanto
+	speedUp(1);
 	score(count);
 }
 function score(count){
@@ -191,13 +192,14 @@ function GameOver(){
 	document.querySelector('.container').innerHTML = '';
 	document.querySelector('.container').appendChild(gameOver);
 }
-/*almenta a velocidade
+function playAgain(){
+	document.location.reload()
+}
 function speedUp(spd){
 	if(speed >= 35){
 		speed -= spd;
-		console.log(speed);
 	}
-}*/
+}
 function arrowPress(arrow){
 	if(typeof arrow !== 'string'){
 		arrow = arrow.currentTarget.getAttribute('data');
