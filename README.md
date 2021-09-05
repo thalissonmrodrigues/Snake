@@ -1,4 +1,4 @@
-# Snake v1.0
+# Snake v2.0
 
 ## Jogo desenvolvido para aperfeiçoar minha lógica de programação.
 

@@ -1,19 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Snake v 1.0</title>
+	<title>Snake v 2.0</title>
 	<link rel="stylesheet" type="text/css" href="./assets/css/estilos.css">
 </head>
 <body>
-	<div class="score">Score: <span>0</span></div>
+	<header class="logo">
+		<h1>SNAKE</h1>
+		<span>v 2.0</span>
+	</header>
 
-	<div class="container">
-		<div class="obj"></div>
-		<div class="item"></div>	
+	<div class="console">
+		<div class="directions--area">
+			<div class="center"></div>
+			<div class="direction left" data="a">
+				<img src="./assets/img/arrow.png" width="15px" style="transform: rotate(180deg);" alt="left">
+			</div>
+			<div class="direction right" data="d">
+				<img src="./assets/img/arrow.png" width="15px" style="transform: rotate(0deg);" alt="right">
+			</div>
+			<div class="direction top" data="w">
+				<img src="./assets/img/arrow.png" width="15px" style="transform: rotate(270deg);" alt="top">
+			</div>
+			<div class="direction bottom" data="s">
+				<img src="./assets/img/arrow.png" width="15px" style="transform: rotate(90deg);" alt="bottom">
+			</div>
+		</div>
+
+		<div class="display--area">
+			<div class="container">
+				<div class="obj"></div>
+				<div class="item"></div>	
+			</div>
+		</div>
+
+		<div class="buttons--area">
+			<div class="button Y">Y</div>
+			<div class="button R">R</div>
+			<div class="button G">G</div>
+			<div class="button B">B</div>
+		</div>
 	</div>
 
-	<div style="display: none;" class="item2"></div>
-	<h1 class="gameOver">Game Over</h1>
+
+	<div style="display: none;" class="body"></div>
+	<h1 class="gameOver">
+		Game Over
+		<div class="score">Score: <span>0</span></div>
+	</h1>
+
+	<footer>
+		Desenvolvido por <a href="https://www.linkedin.com/in/thalissonmrodrigues/">Thalisson</a>
+	</footer>
 	
 	<script type="text/javascript" src="./assets/js/script.js"></script>
 </body>
